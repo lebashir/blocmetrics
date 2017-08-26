@@ -18,7 +18,7 @@ users = User.all
 
 75.times do
   RegisteredApplication.create!(
-    user: users.sample,
+    user: exampleUser,
     name: Faker::App.name,
     url: Faker::Internet.url('example.com')
     )
