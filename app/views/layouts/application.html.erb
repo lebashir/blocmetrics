@@ -10,8 +10,8 @@
 <body>
   <div class="container">
     <ul class="nav nav-tab">
-      <li class="pull-right"><%= link_to "Blocmetrics", welcome_index_path %></li>
-      <li class="pull-right"><%= link_to "About", welcome_about_path %></li>
+      <li class="pull-right"><%= link_to "Blocmetrics", root_path %></li>
+      <li class="pull-right"><%= link_to "About", about_path %></li>
 
     <% if user_signed_in? %>
       <li class="signed-in pull-right">Signed in as: <strong><%= current_user.email %></strong></li>
