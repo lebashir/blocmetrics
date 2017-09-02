@@ -14,7 +14,8 @@
     <div class="media">
       <div class="media-body">
         <h4 class="media-heading">
-           <%= event[0] %> <small>Event details</small>
+          <%= pie_chart @registered_application.events.group(:name).count %>
+          <%= line_chart @registered_application.events.group_by_day(:created_at).count %>
         </h4>
       </div>
     </div>
